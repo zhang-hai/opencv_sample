@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_lake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/lake"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_draw_line"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:text="绘制直线"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_lake"/>
+    <Button
+        android:id="@+id/btn_draw_arrowline"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:text="绘制箭头"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/btn_draw_line"
+        app:layout_constraintTop_toTopOf="@id/btn_draw_line"/>
+
+    <Button
+        android:id="@+id/btn_draw_rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:text="绘制矩形"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/btn_draw_arrowline"
+        app:layout_constraintTop_toTopOf="@id/btn_draw_line"/>
+    <Button
+        android:id="@+id/btn_draw_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="绘制圆形"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_draw_line"
+        app:layout_constraintTop_toBottomOf="@id/btn_draw_line"/>
+
+    <Button
+        android:id="@+id/btn_draw_oval"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="绘制椭圆"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_draw_arrowline"
+        app:layout_constraintTop_toTopOf="@id/btn_draw_circle"/>
+    <Button
+        android:id="@+id/btn_draw_polygon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="绘制多边形"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_draw_rectangle"
+        app:layout_constraintTop_toTopOf="@id/btn_draw_oval"/>
+
+    <Button
+        android:id="@+id/btn_draw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="绘制文字"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_draw_circle"
+        app:layout_constraintTop_toBottomOf="@id/btn_draw_circle"/>
+    <Button
+        android:id="@+id/btn_draw_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="绘制Logo"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/btn_draw_oval"
+        app:layout_constraintTop_toTopOf="@id/btn_draw_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
