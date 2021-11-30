@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/iv_lake"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:src="@mipmap/lake"
         android:scaleType="fitXY"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -21,5 +21,25 @@
         android:text="图像读取"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/iv_lake"/>
-
+    <Button
+        android:id="@+id/btn_img_gray"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="图像灰度"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_read"/>
+    <Button
+        android:id="@+id/btn_img_binary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="二值图-手动伐值"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_gray"/>
+    <Button
+        android:id="@+id/btn_img_auto_binary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="二值图-自动伐值"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btn_img_binary"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
