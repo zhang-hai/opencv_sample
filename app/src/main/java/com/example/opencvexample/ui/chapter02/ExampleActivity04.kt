@@ -1,22 +1,16 @@
-package com.example.opencvexample.ui
+package com.example.opencvexample.ui.chapter02
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.os.Environment
 import android.view.MotionEvent
-import android.view.View
-import android.widget.Button
 import android.widget.ImageView
 import com.example.opencvexample.R
 import com.example.opencvexample.base.BaseActivity
-import com.example.opencvexample.utils.PermissionUtils
 import com.google.android.material.tabs.TabLayout
 import org.opencv.android.Utils
 import org.opencv.core.*
-import org.opencv.imgcodecs.Imgcodecs
 import org.opencv.imgproc.Imgproc
 import kotlin.math.abs
 import kotlin.math.sqrt
@@ -70,7 +64,7 @@ class ExampleActivity04:BaseActivity() {
 
         tb_shape.addOnTabSelectedListener(object:TabLayout.OnTabSelectedListener{
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                mShapeType = tab?.position?:TYPE_LINE
+                mShapeType = tab?.position?: TYPE_LINE
                 println("选择了--->$mShapeType")
             }
 
@@ -112,7 +106,7 @@ class ExampleActivity04:BaseActivity() {
                                 Imgproc.circle(it,mStartPoint, abs(sqrt(r)).toInt(),Scalar(255.0,0.0,0.0),5,Imgproc.LINE_AA)
                             }
                         }
-                        TYPE_ELLIPSE->{
+                        TYPE_ELLIPSE ->{
                             showDrawShapes(bitmap){
                                 val spaceX = event.x.toDouble() - mStartPoint.x
                                 val spaceY = event.y.toDouble() - mStartPoint.y

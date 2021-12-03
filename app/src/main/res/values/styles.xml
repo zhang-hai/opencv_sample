@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="common_textview_style">
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingStart">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+    </style>
+</resources>

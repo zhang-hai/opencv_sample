@@ -12,6 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.OpenCVExample">
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375"/>
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="640"/>
         <activity
             android:name=".ui.MainActivity"
             android:exported="true">
@@ -21,15 +27,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ExampleActivity01"
+        <activity android:name=".ui.chapter02.Chapter02Activity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ExampleActivity02"
+        <activity android:name=".ui.chapter02.ExampleActivity01"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ExampleActivity03"
+        <activity android:name=".ui.chapter02.ExampleActivity02"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ExampleActivity04"
+        <activity android:name=".ui.chapter02.ExampleActivity03"
             android:screenOrientation="portrait"/>
-        <activity android:name=".ui.ExampleActivity05"
+        <activity android:name=".ui.chapter02.ExampleActivity04"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chapter02.ExampleActivity05"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.chapter03.Chapter03Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chapter03.C3_01Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chapter03.C3_02Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chapter03.C3_03Activity"
             android:screenOrientation="portrait"/>
     </application>
 

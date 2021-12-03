@@ -1,4 +1,4 @@
-package com.example.opencvexample.ui
+package com.example.opencvexample.ui.chapter02
 
 import android.Manifest
 import android.graphics.Bitmap

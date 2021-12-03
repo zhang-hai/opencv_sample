@@ -10,50 +10,43 @@
         android:id="@+id/tv_demo_title"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:gravity="center_vertical"
-        android:text="OpenCV示例"
+        android:gravity="center"
         android:textStyle="bold"
+        android:text="第二章 OpenCV中的GUI特性"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <TextView
-        android:id="@+id/tv_demo_title_version"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="版本：v4.5.4"
-        app:layout_constraintLeft_toLeftOf="@id/tv_demo_title"
-        app:layout_constraintRight_toRightOf="@id/tv_demo_title"
-        app:layout_constraintTop_toBottomOf="@id/tv_demo_title" />
+
     <TextView
         android:id="@+id/btn_example_01"
         android:layout_width="match_parent"
-        android:text="第二章 OPENCV中的GUI特性"
         style="@style/common_textview_style"
-        app:layout_constraintTop_toBottomOf="@id/tv_demo_title_version"/>
+        android:text="2.1、图像入门-图片"
+        app:layout_constraintTop_toBottomOf="@id/tv_demo_title"/>
     <TextView
         android:id="@+id/btn_example_02"
         android:layout_width="match_parent"
-        android:text="第三章 图像的核心操作"
         style="@style/common_textview_style"
+        android:text="2.2、图像入门-视频"
         app:layout_constraintTop_toBottomOf="@id/btn_example_01"/>
     <TextView
         android:id="@+id/btn_example_03"
         android:layout_width="match_parent"
-        android:text="第四章 OPENCV中的图像处理"
         style="@style/common_textview_style"
-        app:layout_constraintTop_toBottomOf="@id/btn_example_02"/>
+        android:text="2.3、绘图功能"
+        app:layout_constraintTop_toBottomOf="@id/btn_example_02" />
 
     <TextView
         android:id="@+id/btn_example_04"
         android:layout_width="match_parent"
-        android:text="第五章 特征检测与描述"
         style="@style/common_textview_style"
+        android:text="2.4、手指作为画笔"
         app:layout_constraintTop_toBottomOf="@id/btn_example_03"/>
     <TextView
         android:id="@+id/btn_example_05"
         android:layout_width="match_parent"
-        android:text="第六章 视频分析"
         style="@style/common_textview_style"
+        android:text="2.5、调色板"
         app:layout_constraintTop_toBottomOf="@id/btn_example_04"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

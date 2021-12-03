@@ -1,4 +1,4 @@
-package com.example.opencvexample.ui
+package com.example.opencvexample.ui.chapter02
 
 import android.annotation.SuppressLint
 import android.os.Bundle

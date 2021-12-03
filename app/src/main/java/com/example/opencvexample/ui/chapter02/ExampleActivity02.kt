@@ -1,4 +1,4 @@
-package com.example.opencvexample.ui
+package com.example.opencvexample.ui.chapter02
 
 import android.Manifest
 import android.graphics.Bitmap
@@ -14,7 +14,6 @@ import org.opencv.android.CameraBridgeViewBase
 import org.opencv.core.Mat
 import org.opencv.imgproc.Imgproc
 import org.opencv.videoio.VideoCapture
-import org.opencv.videoio.Videoio
 
 /**
  * 图像入门 - 视频

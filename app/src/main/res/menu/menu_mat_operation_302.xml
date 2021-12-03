@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_img_add"
+        android:title="图像相加" />
+    <item
+        android:id="@+id/item_img_sub"
+        android:title="图像相减" />
+    <item
+        android:id="@+id/item_img_multi"
+        android:title="图像相乘" />
+    <item
+        android:id="@+id/item_img_diff"
+        android:title="图像相除" />
+    <item
+        android:id="@+id/item_img_and"
+        android:title="图像按位与" />
+    <item
+        android:id="@+id/item_img_or"
+        android:title="图像按位或" />
+    <item
+        android:id="@+id/item_img_not"
+        android:title="图像按位非" />
+    <item
+        android:id="@+id/item_img_xor"
+        android:title="图像按位异或" />
+</menu>
