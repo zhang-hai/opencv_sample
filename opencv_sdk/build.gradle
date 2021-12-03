@@ -150,6 +150,12 @@ android {
     }
     buildToolsVersion '30.0.2'
     ndkVersion '20.0.5594570'
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
